@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArcView">
+        <attr name="innerCircleRadius" format="dimension|reference" />
+        <attr name="innerCircleColor" format="color|reference" />
+        <attr name="circleText" format="string|reference" />
+        <attr name="circleTextColor" format="color|reference" />
+        <attr name="circleTextSize" format="dimension|reference" />
+        <attr name="outerCircleRadius" format="dimension|reference" />
+        <attr name="outerCircleColor" format="color|reference" />
+        <attr name="arcColor" format="color|reference" />
+        <attr name="arcAngleStart" format="float|reference" />
+        <attr name="arcAngleSweep" format="float|reference" />
+    </declare-styleable>
+</resources>
