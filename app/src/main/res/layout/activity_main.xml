@@ -23,7 +23,11 @@
     <me.stupidme.arcview.ArcView
         android:id="@+id/arc_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingEnd="16dp"
+        android:paddingStart="100dp"
+        android:paddingTop="16dp" />
 
 </android.support.design.widget.CoordinatorLayout>

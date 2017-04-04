@@ -117,11 +117,14 @@ public class ArcView extends View {
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
         if (widthMode == MeasureSpec.AT_MOST && heightMode == MeasureSpec.AT_MOST) {
-            setMeasuredDimension((int) mOuterCircleRadius * 2, (int) mOuterCircleRadius * 2);
+            int w = (int) (mOuterCircleRadius * 2 + getPaddingLeft() + getPaddingRight());
+            setMeasuredDimension(w, w);
         } else if (widthMode == MeasureSpec.AT_MOST) {
-            setMeasuredDimension((int) mOuterCircleRadius * 2, heightSize);
+            int w = (int) (mOuterCircleRadius * 2 + getPaddingLeft() + getPaddingRight());
+            setMeasuredDimension(w, heightSize);
         } else if (heightMode == MeasureSpec.AT_MOST) {
-            setMeasuredDimension(widthSize, (int) mOuterCircleRadius * 2);
+            int h = (int) (mOuterCircleRadius * 2 + getPaddingTop() + getPaddingBottom());
+            setMeasuredDimension(widthSize, h);
         }
     }
 
